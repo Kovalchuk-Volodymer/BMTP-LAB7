@@ -11,8 +11,8 @@ int isEnding(char lastChar) {
     return lastChar == '.' || lastChar == '!' || lastChar == '?' || lastChar == ')';
 }
 int containsDeveloperWords(char *text) {
-    return strstr(text, "девелопер") != NULL,
-           strstr(text, "девелопером") != NULL,
+    return strstr(text, "девелопер") != NULL ||
+           strstr(text, "девелопером") != NULL ||
            strstr(text, "developer") != NULL;
 }
 int main() {
@@ -31,11 +31,10 @@ int main() {
         return 1;
     }
     convertToLower(input);
-    if(containsDeveloperWords(input)){
+    if (containsDeveloperWords(input)) {
         printf("Так\n");
     } else {
         printf("Ні\n");
     }
-
     return 0;
 }

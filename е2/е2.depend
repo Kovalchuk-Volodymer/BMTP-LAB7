@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1741711660 source:d:\git\bmtp-lab7\å2\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+
